@@ -92,9 +92,14 @@ Framework Types:
 
 ## Testing With Captured Browsers
 
-* [Karma]()
+* [Karma](http://karma-runner.github.io): The AngularJS test runner has been integrated with Metor as [sanjo:karma](https://github.com/Sanjo/meteor-karma.git). It is currently using version [0.12](http://karma-runner.github.io/0.12/index.html). Out of the box it automatically launches Google Chrome.
 
-* [Proctor]()
+  * [AngularJS Testing with Karma and Jasmine](http://www.tuesdaydeveloper.com/2013/06/angularjs-testing-with-karma-and-jasmine/)
+  * [JavaScript TDD with Jasmine and Karma](http://kroltech.com/2013/11/javascript-tdd-with-jasmine-and-karma/)
+
+* [Proctor]():
+
+* [PhantomJS](): Fake browser.
 
 ## Reporters
 
