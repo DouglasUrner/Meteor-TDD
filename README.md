@@ -90,6 +90,12 @@ Framework Types:
 
 * **[Nightwatch](http://nightwatchjs.org/):** [clinical:nightwatch](https://github.com/awatson1978/selenium-nightwatch)
 
+## Testing With Captured Browsers
+
+* [Karma]()
+
+* [Proctor]()
+
 ## Reporters
 
 Reporters provide in-browser access to test results.
