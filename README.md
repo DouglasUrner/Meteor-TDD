@@ -152,11 +152,11 @@ This is a fairly recent (Meteor 0.9.3, it can be made to work with 1.0 by forcin
 
   To run with Meteor 1.0 try this (as of 18 Nov 2014):
 
-```
+  ```
   meteor update
   meteor add sanjo:jasmine@0.6.0-rc.3
   meteor add velocity:html-reporter@0.3.0-rc.3
-```
+  ```
   The other packages used in the tutorial seem to work just fine with their default verisons.
 
 
