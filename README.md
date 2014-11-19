@@ -8,7 +8,7 @@ Background
 
 **[Test Driven Development](http://en.wikipedia.org/wiki/Test-driven_development):**
 
-In the [Meteor Cookbook](https://github.com/awatson1978/meteor-cookbook) the recipe [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md) that provides a good introduction.
+In the [Meteor Cookbook](https://github.com/awatson1978/meteor-cookbook) the recipe [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md) provides a good introduction.
 
 People, Terms, and Practices:
 
@@ -17,11 +17,26 @@ People, Terms, and Practices:
 * [agile](http://en.wikipedia.org/wiki/Agile_software_development)
 * [pair programming](http://en.wikipedia.org/wiki/Pair_programming) at the end of this article there are some interesting looking links with more details and video of pair programming teams at work.
 
-**[Behavior Driven Development]():**
+Definitive Books:
+
+**[Behavior Driven Development](http://en.wikipedia.org/wiki/Behavior-driven_development):**
+
+Behavior Driven Development (BDD) extends the idea of TDD by adding a structured method of specifying the desired behavior though _user stories_. BDD uses tools such as [JBehave]() and [JSpec]() to parse the stories to help build test suites.
 
 People, Terms, and Practices:
 
-* []()
+* [Dan North](http://dannorth.net)
+* [user stories]()
+
+Software:
+
+* [JSpec](http://visionmedia.github.com/jspec): in the style of [RSpec](http://rspec.info) there appears to be an implementation for JavaScript as well. As of November 2014 the web page is down. Jasmine is probably a better alternative.
+
+* [Jasmine]():
+
+* [Cucumber](http://cukes.info):
+
+Definitive Books:
 
 Tools
 =====
@@ -74,30 +89,31 @@ Framework Types:
 
   ```meteor add sanjo:jasmine```
 
-  The Jasmine framework for Meteor is built on [Jasmine 2.0](http://jasmine.github.io/2.0/introduction.html).
+  The Jasmine framework for Meteor is built on
+  [Jasmine 2.0](http://jasmine.github.io/2.0/introduction.html).
 
 * **[Tiny Test]():**
 
   * [Writing Unit Tests (with Tiny Test)](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md)
 
-* **[Cucumber]():**
+* **[Cucumber](http://cukes.info):**
 
 * **[JSHint]():**
 
-* **[Istanbul]():** Code coverage reporting via [xolvio:coverage
-](https://github.com/xolvio/meteor-coverage/)
+* **[Istanbul]():** Code coverage reporting via
+  [xolvio:coverage  ](https://github.com/xolvio/meteor-coverage/)
 
 
 * **[Nightwatch](http://nightwatchjs.org/):** [clinical:nightwatch](https://github.com/awatson1978/selenium-nightwatch)
 
 ## Testing With Captured Browsers
 
-* [Karma](http://karma-runner.github.io): The AngularJS test runner has been integrated with Metor as [sanjo:karma](https://github.com/Sanjo/meteor-karma.git). It is currently using version [0.12](http://karma-runner.github.io/0.12/index.html). Out of the box it automatically launches Google Chrome.
+* [Karma](http://karma-runner.github.io): The AngularJS unit test runner has been integrated with Metor as [sanjo:karma](https://github.com/Sanjo/meteor-karma.git). It is currently using version [0.12](http://karma-runner.github.io/0.12/index.html). Out of the box it automatically launches Google Chrome.
 
   * [AngularJS Testing with Karma and Jasmine](http://www.tuesdaydeveloper.com/2013/06/angularjs-testing-with-karma-and-jasmine/)
   * [JavaScript TDD with Jasmine and Karma](http://kroltech.com/2013/11/javascript-tdd-with-jasmine-and-karma/)
 
-* [Proctor]():
+* [Protractor](http://angular.github.io/protractor/#/): The AngularJS end-to-end test runner. Protractor works in conjunction with Selenium and WebDriverJS. There is a [tutorial](http://angular.github.io/protractor/#/tutorial) available. As of November, 2014 `meteor search protractor` does not return any results.
 
 * [PhantomJS](): Fake browser.
 
@@ -133,6 +149,15 @@ This looks to be the "offical" set of examples. There is sample code for tests w
 
 * [Bullet-proof Meteor applications with Velocity, Unit Testing, Integration Testing and Jasmine](http://doctorllama.wordpress.com/2014/09/22/bullet-proof-internationalised-meteor-applications-with-velocity-unit-testing-integration-testing-and-jasmine/):
 This is a fairly recent (Meteor 0.9.3, it can be made to work with 1.0 by forcing package updates if necessary) and highly detailed tutorial, you can clone the code from its repository on GitHub: [https://github.com/tomitrescak/BulletProofMeteor](https://github.com/tomitrescak/BulletProofMeteor). The author, Tomas Trescak, is active in the comments section. Even though Meteor testing is a moving target and a lot of the tutorials that you'll find right now (late 2014) are out of date, this one is a good bet. Just be sure to read the comments and make sure you're using the right verison of Meteor.
+
+To run with Meteor 1.0 try this (as of 18 Nov 2014):
+
+```
+  meteor update
+  meteor add sanjo:jasmine@0.6.0-rc.3
+  meteor add velocity:html-reporter@0.3.0-rc.3
+```
+The other packages used in the tutorial seem to work just fine with their default verisons.
 
 
 
