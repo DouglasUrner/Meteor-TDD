@@ -150,14 +150,14 @@ This looks to be the "offical" set of examples. There is sample code for tests w
 * [Bullet-proof Meteor applications with Velocity, Unit Testing, Integration Testing and Jasmine](http://doctorllama.wordpress.com/2014/09/22/bullet-proof-internationalised-meteor-applications-with-velocity-unit-testing-integration-testing-and-jasmine/):
 This is a fairly recent (Meteor 0.9.3, it can be made to work with 1.0 by forcing package updates if necessary) and highly detailed tutorial, you can clone the code from its repository on GitHub: [https://github.com/tomitrescak/BulletProofMeteor](https://github.com/tomitrescak/BulletProofMeteor). The author, Tomas Trescak, is active in the comments section. Even though Meteor testing is a moving target and a lot of the tutorials that you'll find right now (late 2014) are out of date, this one is a good bet. Just be sure to read the comments and make sure you're using the right verison of Meteor.
 
-To run with Meteor 1.0 try this (as of 18 Nov 2014):
+  To run with Meteor 1.0 try this (as of 18 Nov 2014):
 
 ```
   meteor update
   meteor add sanjo:jasmine@0.6.0-rc.3
   meteor add velocity:html-reporter@0.3.0-rc.3
 ```
-The other packages used in the tutorial seem to work just fine with their default verisons.
+  The other packages used in the tutorial seem to work just fine with their default verisons.
 
 
 
