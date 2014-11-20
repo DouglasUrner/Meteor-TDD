@@ -1,34 +1,32 @@
-Meteor-TDD
-==========
+# Meteor-TDD
 
 Notes & experiments as I teach myself test driven development (TDD) in Meteor. My goal is to be able to use these methods effectively in my own work and also to develop lesson plans for teaching pair programming in my classes (I teach Exploring Computer Science and IB Computer Science at the US high school level). In my classes I'd like to use the coding retreat model from the [Global Day of Coderetreat](http://globalday.coderetreat.org).
 
-Background
-==========
+## Background
 
-**[Test Driven Development](http://en.wikipedia.org/wiki/Test-driven_development):**
+### [Test Driven Development](http://en.wikipedia.org/wiki/Test-driven_development):
 
 In the [Meteor Cookbook](https://github.com/awatson1978/meteor-cookbook) the recipe [Test Driven Development](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/test-driven-development.md) provides a good introduction.
 
-People, Terms, and Practices:
+#### People, Terms, and Practices:
 
 * [Kent Beck]()
 * [extreme programming](http://en.wikipedia.org/wiki/Extreme_programming)
 * [agile](http://en.wikipedia.org/wiki/Agile_software_development)
 * [pair programming](http://en.wikipedia.org/wiki/Pair_programming) at the end of this article there are some interesting looking links with more details and video of pair programming teams at work.
 
-Definitive Books:
+#### Definitive Books:
 
-**[Behavior Driven Development](http://en.wikipedia.org/wiki/Behavior-driven_development):**
+### [Behavior Driven Development](http://en.wikipedia.org/wiki/Behavior-driven_development):
 
 Behavior Driven Development (BDD) extends the idea of TDD by adding a structured method of specifying the desired behavior though _user stories_. BDD uses tools such as [JBehave]() and [JSpec]() to parse the stories to help build test suites.
 
-People, Terms, and Practices:
+#### People, Terms, and Practices:
 
 * [Dan North](http://dannorth.net)
 * [user stories]()
 
-Software:
+#### Software:
 
 * [JSpec](http://visionmedia.github.com/jspec): in the style of [RSpec](http://rspec.info) there appears to be an implementation for JavaScript as well. As of November 2014 the web page is down. Jasmine is probably a better alternative.
 
@@ -36,10 +34,9 @@ Software:
 
 * [Cucumber](http://cukes.info):
 
-Definitive Books:
+#### Definitive Books:
 
-Tools
-=====
+## Tools
 
 [Velocity](https://github.com/meteor-velocity/velocity): Velocity is the official testing framework for Meteor. Typically you would add Velocity to your project by including a Velocity compatible test tool to your project. In turn those tools would pull in Velocity. For example the command:
 
@@ -53,11 +50,14 @@ Velocity is a reactive test runner. It monitors any files that change in the tes
 
 Meteor's test frameworks often build on existing Node.js test frameworks – adding the code needed to make them work in a reactive context.
 
-Framework Types:
+### Framework Types:
 
 * ATDD
+
 * BDD
+
 * TDD
+
 * Unit Tests
 
   Have access to the internals of the unit under test.
@@ -66,23 +66,33 @@ Framework Types:
   * Isolated Unit Tests
 
 * Integration Tests
+
 * End-to-end Browser Automation
+
 * End-to-end Headless Browser Automation
+
 * Code Coverage
+
 * Package Tests
-* **Acceptance Tests:** Treat the application as a "black box" testing only inputs and outputs.
+
+* Acceptance Tests: Treat the application as a "black box" testing only inputs and outputs.
 
 * Static Code Analysis
 
+### Frameworks
 
 * **[Mocha](http://mochajs.org):** TDD, BDD Integration, and In-context Unit tesing. Both server- and client-side integration testing are supported. The Meteor package for the Mocha framework is [mike:mocha](https://github.com/mad-eye/meteor-mocha-web), it uses Chai for assertions. The [Mocha project](https://github.com/mochajs/mocha) is hosted on GitHub.
 
   ```meteor add mike:mocha```
 
   Mocha uses an external library for assertions, all that the library needs to do is to throw an assertion. Libraries that are known to work include:
+
   * [better-assert](https://github.com/tj/better-assert): c-style self-documenting assert() statements.
+
   * [Chai Assertion Library](http://chaijs.com): a _"BDD/TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework."_ Chai provides assert(), expect(), and should style assertions. [Chai for Metor]() is frequently pulled in as a dependency of another package such as Mocha.
+
   * [expect.js](https://github.com/LearnBoost/expect.js): expect() style assertions.
+
   * [should.js](https://github.com/tj/should.js): BDD style assertions.
 
 * **[Jasmine](http://jasmine.github.io):** A [behavior driven development](http://en.wikipedia.org/wiki/Behavior-driven_development) framework for  testing JavaScript and Ruby (and maybe Python too). Meteor/Velocity integration can be found here: [sanjo:meteor-jasmine](https://github.com/Sanjo/meteor-jasmine). To install:
@@ -126,11 +136,9 @@ Reporters provide in-browser access to test results.
   ```meteor add velocity:html-reporter```
 
 
-Editors and IDEs
-================
+## Editors and IDEs
 
-Tutorials
-=========
+## Tutorials
 
 Meteor specific testing tutorials and useful examples. When working with any of these tutorials you may have to do some experimenting with versions. Much of the test code is under active development and you may need to force an update. Like this:
 
@@ -161,15 +169,13 @@ This is a fairly recent (Meteor 0.9.3, it can be made to work with 1.0 by forcin
 
 
 
-Project Setup
-=============
+## Project Setup
 
-Quick start
+### Quick start
 
-Running tests from packages.
+### Running tests from packages.
 
-Resources
-=========
+## Resources
 
 Useful materials I discovered along the way:
 
@@ -179,8 +185,7 @@ Useful materials I discovered along the way:
 * [Meteor Cookbook](https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.with.jasmine.md)
 * [Meteor Testing](http://www.meteortesting.com) by Sam Hatoum: Book, still in development. A free chapter introducing Velocity is available for review, you can also purchase the "beta edition."
 
-Packages
-========
+## Packages
 
 Quick notes on other packages that get pulled into the fray:
 
