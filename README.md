@@ -81,6 +81,13 @@ Meteor's test frameworks often build on existing Node.js test frameworks – ad
 
 ### Frameworks
 
+* **[Jasmine](http://jasmine.github.io):** A [behavior driven development](http://en.wikipedia.org/wiki/Behavior-driven_development) framework for  testing JavaScript and Ruby (and maybe Python too). Meteor/Velocity integration can be found here: [sanjo:meteor-jasmine](https://github.com/Sanjo/meteor-jasmine). To install:
+
+  ```meteor add sanjo:jasmine```
+
+  The Jasmine framework for Meteor is built on
+[Jasmine 2.0](http://jasmine.github.io/2.0/introduction.html).
+
 * **[Mocha](http://mochajs.org):** TDD, BDD Integration, and In-context Unit tesing. Both server- and client-side integration testing are supported. The Meteor package for the Mocha framework is [mike:mocha](https://github.com/mad-eye/meteor-mocha-web), it uses Chai for assertions. The [Mocha project](https://github.com/mochajs/mocha) is hosted on GitHub.
 
   ```meteor add mike:mocha```
@@ -94,13 +101,6 @@ Meteor's test frameworks often build on existing Node.js test frameworks – ad
   * [expect.js](https://github.com/LearnBoost/expect.js): expect() style assertions.
 
   * [should.js](https://github.com/tj/should.js): BDD style assertions.
-
-* **[Jasmine](http://jasmine.github.io):** A [behavior driven development](http://en.wikipedia.org/wiki/Behavior-driven_development) framework for  testing JavaScript and Ruby (and maybe Python too). Meteor/Velocity integration can be found here: [sanjo:meteor-jasmine](https://github.com/Sanjo/meteor-jasmine). To install:
-
-  ```meteor add sanjo:jasmine```
-
-  The Jasmine framework for Meteor is built on
-  [Jasmine 2.0](http://jasmine.github.io/2.0/introduction.html).
 
 * **[Tiny Test]():**
 
